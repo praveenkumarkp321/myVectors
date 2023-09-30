@@ -1,0 +1,756 @@
+
+.bg-box {
+    .wing {
+        &-1 {
+            position: absolute;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border-radius: 40%;
+            box-shadow: 0px -5px 0 black;
+            top: 10rem;
+            left: 32rem;
+            transform: rotate(45deg);
+            z-index: 99;
+
+            .head {
+                width: 10px;
+                height: 15px;
+                background: black;
+                display: inline-block;
+                border-radius: 100%;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                top: -8px;
+                position: relative;
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border-radius: 40%;
+            box-shadow: 0px -5px 0 black;
+            top: 6rem;
+            left: 33rem;
+            transform: rotate(45deg);
+
+            .head {
+                width: 10px;
+                height: 15px;
+                background: black;
+                display: inline-block;
+                border-radius: 100%;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                top: -8px;
+                position: relative;
+            }
+        }
+
+        &-3 {
+            position: absolute;
+            width: 28px;
+            height: 26px;
+            background: transparent;
+            border-radius: 42%;
+            box-shadow: 0px -5px 0 black;
+            top: 8rem;
+            left: 27rem;
+            transform: rotate(45deg);
+
+            .head {
+                width: 10px;
+                height: 15px;
+                background: black;
+                display: inline-block;
+                border-radius: 100%;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                top: -8px;
+                position: relative;
+            }
+        }
+    }
+
+    max-height: 90vh;
+    width: 100vw;
+    background: hsl(38.32, 100%, 60.39%);
+    position: relative;
+    max-width: 1150px;
+    margin: auto;
+    overflow: hidden;
+    // margin-top: 2rem;
+    background: linear-gradient(177deg, #ffb025 11.4%, #ffcb6f 70.2%);
+
+    .sky-box {
+        height: 70vh;
+        position: relative;
+        overflow: hidden;
+
+        .cloud-1 {
+            width: fit-content;
+            position: absolute;
+            left: 5rem;
+            top: 3rem;
+
+            .circle-1 {
+                width: 98px;
+                height: 89px;
+                border-radius: 100%;
+                background: white;
+            }
+
+            .circle-2 {
+                width: 140px;
+                height: 126px;
+                border-radius: 100%;
+                background: white;
+                margin-top: -7rem;
+                margin-left: 3rem;
+            }
+
+            .circle-3 {
+                width: 101px;
+                height: 65px;
+                border-radius: 100%;
+                background: white;
+                margin-top: -8rem;
+                margin-left: 8rem;
+            }
+
+            .circle-4 {
+                width: 147px;
+                height: 76px;
+                border-radius: 100%;
+                background: white;
+                margin-top: -2rem;
+                margin-left: 8rem;
+            }
+        }
+
+        .cloud-2 {
+            width: fit-content;
+            position: absolute;
+            right: 16px;
+            top: 9rem;
+
+            .circle-1 {
+                width: 86px;
+                height: 58px;
+                border-radius: 100%;
+                background: white;
+                margin-top: -2rem;
+                margin-left: 8rem;
+            }
+
+            .circle-2 {
+                width: 120px;
+                height: 90px;
+                border-radius: 100%;
+                background: white;
+                margin-top: -3rem;
+                margin-left: 3rem;
+            }
+
+            .circle-3 {
+                width: 140px;
+                height: 104px;
+                border-radius: 100%;
+                background: white;
+                margin-top: -5rem;
+                margin-left: 3rem;
+            }
+        }
+
+        .sun-box {
+            position: absolute;
+            bottom: -124px;
+            left: 33%;
+
+            .sun-layer-1 {
+                background: white;
+                border-radius: 100%;
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                bottom: 53px;
+                left: 66px;
+                width: 280px;
+                height: 280px;
+                z-index: 3;
+            }
+
+            .sun-layer-2 {
+                background: hsl(37.14, 100%, 91.76%);
+                border-radius: 100%;
+                width: 360px;
+                height: 360px;
+                position: absolute;
+                bottom: 20px;
+                left: 28px;
+                width: 350px;
+                height: 350px;
+                z-index: 2;
+            }
+
+            .sun-layer-3 {
+                background: hsl(38.1deg 100% 75.29%);
+                border-radius: 100%;
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                z-index: 1;
+                box-shadow: 17px 2px 94px #ffa200;
+            }
+        }
+    }
+
+    .land-box {
+        background: hsl(38.32, 100%, 60.39%);
+
+        height: 30vh;
+        position: relative;
+
+        .land-row-1 {
+            position: absolute;
+            bottom: 0;
+            // overflow: hidden;
+            width: 100%;
+            z-index: 95;
+
+            .land-cir-1 {
+                width: 300px;
+                height: 300px;
+                background: hsl(322.5, 21.05%, 14.9%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -13rem;
+                margin-left: -4rem;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 4px;
+                    height: 86px;
+                    background: #2e1e28;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: '';
+                    width: 44px;
+                    height: 56px;
+                    background: #2e1e28;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 15px;
+                    top: -69px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-2 {
+                width: 334px;
+                height: 289px;
+                background: hsl(322.5, 21.05%, 14.9%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -8rem;
+
+                margin-left: -3rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 4px;
+                    height: 86px;
+                    background: #2e1e28;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &::after {
+                    content: '';
+                    width: 44px;
+                    height: 56px;
+                    background: #2e1e28;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 15px;
+                    top: -69px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-3 {
+                width: 508px;
+                height: 378px;
+                background: hsl(322.5, 21.05%, 14.9%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -14rem;
+                margin-left: -17rem;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 4px;
+                    height: 84px;
+                    background: #410e13;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 35px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: "";
+                    width: 30px;
+                    height: 50px;
+                    background: #410e13;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 22px;
+                    top: -69px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-4 {
+                width: 300px;
+                height: 300px;
+                background: hsl(322.5, 21.05%, 14.9%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -12rem;
+                margin-left: -4rem;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 4px;
+                    height: 110px;
+                    background: #2e1e28;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -110px;
+                    border-radius: 12px;
+                }
+
+                &::after {
+                    content: "";
+                    width: 44px;
+                    height: 54px;
+                    background: #2e1e28;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 14px;
+                    top: -159px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-5 {
+                width: 300px;
+                height: 217px;
+                background: hsl(322.5, 21.05%, 14.9%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -1rem;
+                margin-left: -6rem;
+                position: absolute;
+            }
+        }
+
+        .land-row-2 {
+            position: absolute;
+            bottom: 0;
+            // overflow: hidden;
+            width: 100%;
+            z-index: 93;
+            margin-bottom: 3rem;
+
+            .land-cir-1 {
+                width: 266px;
+                height: 307px;
+                background: hsl(354.12deg 64.56% 15.49%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -13rem;
+                margin-left: -5rem;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 4px;
+                    height: 86px;
+                    background: hsl(354.12deg 64.56% 15.49%);
+
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: '';
+                    width: 44px;
+                    height: 56px;
+                    background: hsl(354.12deg 64.56% 15.49%);
+
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 15px;
+                    top: -69px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-2 {
+                width: 309px;
+                height: 308px;
+                background: hsl(354.12deg 64.56% 15.49%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -14rem;
+                margin-left: -8rem;
+            }
+
+            .land-cir-3 {
+                width: 508px;
+                height: 378px;
+                background: hsl(354.12deg 64.56% 15.49%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -14rem;
+                margin-left: -17rem;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 4px;
+                    height: 86px;
+                    background: hsl(354.12deg 64.56% 15.49%);
+
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: "";
+                    width: 44px;
+                    height: 65px;
+                    background: hsl(354.12, 64.56%, 15.49%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 15px;
+                    top: -69px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-4 {
+                width: 300px;
+                height: 300px;
+                background: hsl(354.12deg 64.56% 15.49%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -13rem;
+                margin-left: -4rem;
+            }
+
+            .land-cir-5 {
+                width: 300px;
+                height: 217px;
+                background: hsl(354.12deg 64.56% 15.49%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -1rem;
+                margin-left: -6rem;
+                position: absolute;
+            }
+        }
+
+        .land-row-3 {
+            position: absolute;
+            bottom: 0;
+            // overflow: hidden;
+            width: 100%;
+            margin-bottom: 6rem;
+            z-index: 92;
+
+            .land-cir-1 {
+                width: 300px;
+                height: 300px;
+                background: hsl(4.84deg 74.7% 32.55%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -13rem;
+                margin-left: -4rem;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 4px;
+                    height: 86px;
+                    background: hsl(4.84deg 74.7% 32.55%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: '';
+                    width: 44px;
+                    height: 56px;
+                    background: hsl(4.84deg 74.7% 32.55%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 15px;
+                    top: -69px;
+                    border-radius: 50%;
+                }
+
+            }
+
+            .land-cir-2 {
+                width: 334px;
+                height: 289px;
+                background: hsl(4.84deg 74.7% 32.55%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -14rem;
+                margin-left: -3rem;
+            }
+
+            .land-cir-3 {
+                width: 508px;
+                height: 378px;
+                background: hsl(4.84deg 74.7% 32.55%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -14rem;
+                margin-left: -17rem;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 3px;
+                    height: 86px;
+                    background: hsl(4.84, 74.7%, 32.55%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 77px;
+                    top: -30px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: "";
+                    width: 34px;
+                    height: 50px;
+                    background: hsl(4.84, 74.7%, 32.55%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 61px;
+                    top: -66px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-4 {
+                width: 300px;
+                height: 300px;
+                background: hsl(4.84deg 74.7% 32.55%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -13rem;
+                margin-left: -4rem;
+            }
+
+            .land-cir-5 {
+                width: 300px;
+                height: 217px;
+                background: hsl(4.84deg 74.7% 32.55%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -1rem;
+                margin-left: -6rem;
+                position: absolute;
+            }
+        }
+
+        .land-row-4 {
+            position: absolute;
+            bottom: 0;
+            // overflow: hidden;
+            width: 100%;
+            margin-bottom: 9rem;
+            z-index: 90;
+            margin-left: 0rem;
+
+            .land-cir-1 {
+                width: 300px;
+                height: 300px;
+                background: hsl(28.95deg 100% 44.71%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -16rem;
+                margin-left: -8rem;
+            }
+
+            .land-cir-2 {
+                width: 334px;
+                height: 289px;
+                background: hsl(28.95deg 100% 44.71%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -14rem;
+                margin-left: -3rem;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 86px;
+                    background: hsl(28.95, 100%, 44.71%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 34px;
+                    top: -100px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: "";
+                    width: 21px;
+                    height: 37px;
+                    background: hsl(28.95, 100%, 44.71%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 24px;
+                    top: -130px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-3 {
+                width: 508px;
+                height: 378px;
+                background: hsl(28.95deg 100% 44.71%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -16rem;
+                margin-left: -21rem;
+            }
+
+            .land-cir-4 {
+                width: 300px;
+                height: 300px;
+                background: hsl(28.95deg 100% 44.71%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -13rem;
+                margin-left: -4rem;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 86px;
+                    background: hsl(28.95, 100%, 44.71%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 28px;
+                    top: -44px;
+                    border-radius: 12px;
+                }
+
+                &:after {
+                    content: "";
+                    width: 22px;
+                    height: 45px;
+                    background: hsl(28.95, 100%, 44.71%);
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 999;
+                    right: 18px;
+                    top: -80px;
+                    border-radius: 50%;
+                }
+            }
+
+            .land-cir-5 {
+                width: 300px;
+                height: 217px;
+                background: hsl(28.95deg 100% 44.71%);
+                display: inline-block;
+                border-radius: 100%;
+                margin-bottom: -1rem;
+                margin-left: -6rem;
+                position: absolute;
+
+            }
+        }
+    }
+
+    .sky-box .cloud-2 .circle-3 {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background: white;
+        margin-top: -4rem;
+        margin-left: 2rem;
+    }
+}
+
+span.head::after {
+    content: '';
+    width: 4px;
+    height: 22px;
+    background: black;
+    display: inline-block;
+    top: -1px;
+    position: absolute;
+    left: 3px;
+    border-radius: 100%;
+}

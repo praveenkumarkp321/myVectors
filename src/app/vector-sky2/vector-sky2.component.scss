@@ -1,0 +1,343 @@
+.bg-box {
+    max-width: 1150px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(244, 240, 166);
+    background: linear-gradient(190deg, rgba(244, 240, 166, 1) 0%, rgba(255, 240, 49, 1) 35%, rgb(255, 60, 0) 100%);
+
+    .cloud-set {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .bottom-rect {
+            height: 115px;
+            background: hsl(10.59deg 9.94% 33.53%);
+            width: 100%;
+        }
+
+        .circle-lg {
+            border-radius: 100%;
+            position: absolute;
+            background: hsl(10.59deg 9.94% 33.53%);
+            bottom: 0;
+            z-index: 99;
+
+            &-1 {
+                width: 220px;
+                height: 220px;
+                left: -2rem;
+            }
+
+            &-2 {
+                width: 260px;
+                height: 260px;
+                left: 14rem;
+            }
+
+            &-3 {
+                width: 350px;
+                height: 350px;
+                right: 15rem;
+            }
+
+            &-4 {
+                width: 250px;
+                height: 250px;
+                right: -10px;
+            }
+        }
+
+        .circle-sm {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background: hsl(10.59deg 9.94% 33.53%);
+            z-index: 999;
+            bottom: 0;
+            border-radius: 100%;
+
+            &-1 {
+                top: -105px;
+
+            }
+
+            &-2 {
+                top: -121px;
+                left: 2rem;
+            }
+
+            &-3 {
+                top: -115px;
+                left: 5rem;
+                width: 87px;
+                border: 2px solid #ad875d;
+                border-width: 3px 0px 0px 2px;
+            }
+
+            &-4 {
+                top: -80px;
+                left: 7rem;
+            }
+
+            &-5 {
+                top: -35px;
+                left: 8rem;
+            }
+
+            &-6 {
+                top: -40px;
+                left: 12rem;
+                border: 2px solid #ad875d;
+                border-width: 0px 0px 1px 4px;
+            }
+
+            &-7 {
+                top: -88px;
+                left: 14rem;
+            }
+
+            &-8 {
+                top: -113px;
+                left: 15rem;
+            }
+
+            &-9 {
+                top: -151px;
+                left: 17rem;
+                border: 2px solid #ad875d;
+                border-width: 3px 0px 0px 3px;
+            }
+
+            &-10 {
+                top: -178px;
+                left: 20rem;
+            }
+
+            &-11 {
+                top: -164px;
+                left: 22rem;
+                width: 84px;
+                height: 80px;
+            }
+
+            &-12 {
+                top: -128px;
+                left: 25rem;
+            }
+
+            &-13 {
+                top: -83px;
+                left: 27rem;
+                width: 98px;
+                height: 104px;
+            }
+
+            &-14 {
+                top: -15px;
+                left: 32rem;
+            }
+
+            &-15 {
+                top: -61px;
+                left: 32rem;
+            }
+
+            &-16 {
+                top: -99px;
+                left: 33.5rem;
+            }
+
+            &-17 {
+                top: -218px;
+                left: 34.5rem;
+                width: 136px;
+                height: 158px;
+            }
+
+            &-18 {
+                top: -243px;
+                left: 39.5rem;
+            }
+
+            &-19 {
+                top: -281px;
+                right: 22.5rem;
+                width: 120px;
+                height: 120px;
+                border: 2px solid #ad875d;
+                border-width: 4px 0px 0px 1px;
+            }
+
+            &-20 {
+                top: -266px;
+                right: 21.5rem;
+            }
+
+            &-21 {
+                top: -236px;
+                right: 18.5rem;
+            }
+
+            &-22 {
+                top: -195px;
+                right: 16.5rem;
+                border: 2px solid #ad875d;
+                border-width: 0px 2px 0px 0px;
+                z-index: 9999;
+            }
+
+            &-23 {
+                top: -164px;
+                right: 15.5rem;
+            }
+
+            &-24 {
+                top: -116px;
+                right: 9.5rem;
+                width: 149px;
+                height: 120px;
+                border: 2px solid #ad875d;
+                border-width: 0px 0px 0px 4px;
+            }
+
+            &-25 {
+                top: -152px;
+                right: 8.5rem;
+            }
+
+            &-26 {
+                top: -156px;
+                right: 5.5rem;
+                border: 2px solid #ad875d;
+                border-width: 2px 0px 0px 1px;
+            }
+
+            &-27 {
+                top: -145px;
+                right: 2.5rem;
+            }
+
+            &-28 {
+                top: -112px;
+                right: -0.5rem;
+            }
+
+            &.sun {
+                top: -200px;
+                left: 29rem;
+                background: #FFFDE7;
+                z-index: 9;
+                width: 130px;
+                height: 130px;
+                z-index: 9;
+                box-shadow: rgb(255 185 82) 6px -4px 71px;
+                background: rgb(253, 255, 167);
+                background: radial-gradient(circle, rgb(255 255 255) 0%, #FFF9C4 100%);
+            }
+
+
+        }
+
+        .sun-shadow {
+            position: absolute;
+            bottom: 0;
+            top: -188px;
+            left: 27rem;
+            background: transparent;
+            box-shadow: 113px 152px 260px 249px #ffc03d3b;
+            border-radius: 100%;
+            width: 0;
+            height: 0;
+            z-index: 99999;
+        }
+
+        .cloud-sub-set1 {
+            left: 18rem;
+            position: relative;
+            bottom: 0;
+            left: 20rem;
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #ad875d;
+                border-radius: 100%;
+                z-index: 9999;
+                position: static;
+                position: relative;
+                background: #5e504d;
+
+                &-1 {
+                    bottom: -7rem;
+                    border-width: 4px 0px 0px 0px;
+                }
+
+                &-2 {
+                    bottom: -6rem;
+                    left: 1rem;
+                    border-width: 3px 0px 0px 0px;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &-3 {
+                    bottom: 1rem;
+                    left: -3rem;
+                    border-width: 3px 0px 0px 0px;
+                    width: 74px;
+                    height: 74px;
+                }
+
+                &-4 {
+                    bottom: 2rem;
+                    left: 0rem;
+                    border-width: 4px 0px 0px 0px;
+                    width: 54px;
+                    height: 50px;
+                }
+            }
+        }
+
+        .cloud-sub-set2 {
+            bottom: -110px;
+            left: 40rem;
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #ad875d;
+                border-radius: 100%;
+                z-index: 9999;
+                position: static;
+                position: relative;
+                background: #5e504d;
+
+                &-1 {
+                    bottom: -6rem;
+                    border-width: 4px 0px 0px 0px;
+                    left: -38px;
+                }
+
+                &-2 {
+                    bottom: -3rem;
+                    border-width: 4px 0px 0px 0px;
+                    right: -71px;
+                }
+
+                &-3 {
+                    bottom: 3rem;
+                    border-width: 3px 1px 0px 0px;
+                }
+
+                &-4 {
+                    bottom: 6rem;
+                    border-width: 2px 0px 0px 5px;
+                    left: 32px;
+                }
+
+            }
+        }
+    }
+}
