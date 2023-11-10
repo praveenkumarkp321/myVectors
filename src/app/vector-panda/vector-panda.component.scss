@@ -1,0 +1,103 @@
+.content-box {
+    width: 700px;
+    height: 500px;
+    margin: auto;
+
+    .tree-set {
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+
+    }
+
+    .branch {
+
+        width: 700px;
+        height: 30px;
+        background: #7b5319;
+        border-radius: 30px;
+
+    }
+
+    .leaf {
+
+        width: 60px;
+        height: 30px;
+        background: green;
+        border-radius: 40px 1px 40px 0px;
+        right: 44px;
+        top: -39px;
+        position: absolute;
+        transform: rotate(-20deg);
+
+        &::after {
+            width: 60px;
+            height: 30px;
+            background: #5fa55f;
+            border-radius: 40px 1px 40px 0px;
+            right: 24px;
+            top: -17px;
+            position: absolute;
+            transform: rotate(-52deg);
+            content: '';
+        }
+    }
+
+    .panda-set {
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+        .head {
+
+            width: 150px;
+            height: 150px;
+            background: red;
+            display: inline-block;
+            margin-left: -18rem;
+            margin-bottom: 7rem;
+            border-radius: 100%;
+
+            .eye-1 {
+
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                background: transparent;
+                border: 1px solid black;
+                border-radius: 100%;
+                border-width: 0 6px 0 0;
+                transform: rotate(-126deg);
+                margin-top: 1rem;
+                margin-left: 5rem;
+
+            }
+
+            .eye-2 {}
+
+            .nose {}
+
+            .face-circle {}
+        }
+
+
+        .panda-body {
+            .ear-1 {}
+
+            .ear-2 {}
+
+            .leg-1 {}
+
+            .leg-2 {}
+
+            .leg-3 {}
+
+            .leg-4 {}
+        }
+
+    }
+}
